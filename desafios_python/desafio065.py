@@ -2,7 +2,19 @@
 # quer ou não continuar a digitar valores
 
 r= 'S'
+soma = qtd = media = maior = menor = 0
 while r == 'S':
     n=int(input('Digite um valor: '))
-    r=str(input('Quer continuar? [S/N] ')).upper()  
-print('Fim')
+    soma += n
+    qtd += 1
+    if qtd == 1:
+        maior = menor = n
+    else: 
+        if n > maior:
+            maior = n
+        if n < menor:
+            menor = n
+    r=str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+media = soma / qtd
+print('Você digitou {} números e a média foi {}'.format(soma, media))
+print('O maior valor foi {} e o menor foi {}'.format(maior, menor))
