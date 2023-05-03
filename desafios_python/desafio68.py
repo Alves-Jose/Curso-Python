@@ -11,24 +11,26 @@ while True:
     pc = randint(1, 10)
     total = value + pc
     pair = total % 2
-    result = str(input('Even or Odd? [E/O] ')).upper().strip()
+    result = ' '
+    while result not in 'EO':
+        result = str(input('Even or Odd? [E/O] ')).upper().strip()
     
-    if result == 'E':
-        if pair == 0:
-            print('Pair. You won')
-            cont =+ 1
-        elif pair != 0:
-            print(f'Odd. You lose. You won {cont}')
-            break
+        if result == 'E':
+            if pair == 0:
+                print('Pair. You won')
+                cont += 1
+            elif pair != 0:
+                print(f'Odd. You lose. You won {cont}')
+                break
 
-    elif result == 'O':
-        if pair == 0:
-            print(f'Pair. You lose. You won {cont}')
-            break
-            
-        elif pair != 0:
-            print('Odd. You won')
-            cont =+1
+        elif result == 'O':
+            if pair == 0:
+                print(f'Pair. You lose. You won {cont}')
+                break
+                
+            elif pair != 0:
+                print('Odd. You won')
+                cont += 1
 
     print('-'*37)
     print(f'Your number: {value} Pc number: {pc} Total: {total} ')
