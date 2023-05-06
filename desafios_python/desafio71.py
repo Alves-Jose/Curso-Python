@@ -6,4 +6,4 @@ print('BANK')
 print('-'*4)
 
 
-value = int(input('What the value? $'))
+value = int(input('What the value? $')).strip()
