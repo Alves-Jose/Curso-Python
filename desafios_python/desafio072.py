@@ -8,4 +8,11 @@ while True:
     if 0 <= n <= 20:
         break
     print('Try again.', end=' ')
+
+    question = str(input('Do you want to enter another number?')).strip().upper()[0]
+    while question not in 'Y/N':
+        question = str(input('Do you want to enter another number?')).strip().upper()[0]
+    if question == 'N':
+             break
 print(f'You typed the number {cont[n]}')
+    
