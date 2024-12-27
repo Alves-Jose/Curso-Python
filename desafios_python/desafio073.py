@@ -3,3 +3,18 @@
 # b) Os últimos 4 colocados.
 # c) Times em ordem alfabética. 
 # d) Em que posição está o time da Chapecoense
+
+times = ('Palmeiras', 'Santos', 'Vasco da Gama', 'Grêmio', 'Flamengo', 'Internacional', 'Cruzeiro', 
+'Botafogo', 'Fluminense', 'Coritiba', 'Bahia', 'Goiás', 'Guarani', 'Sport', 'Portuguesa', 'Atlético Paranaense',
+'Vitória')
+
+print(times)
+
+for cont in range(0, 5):
+    print(times[cont])
+
+print(times[-4:])
+
+print(sorted(times))
+
+print(times.index('Fluminense')+1)
