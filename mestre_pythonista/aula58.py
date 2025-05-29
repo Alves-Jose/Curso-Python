@@ -11,7 +11,7 @@ def obter_distancia():
 def rotacionar_turtle(turtle)
    movimentar_para_lado = str(input('Rotacionar para d:direita, e:esquerda n:não rotacionar'))
        
-def rotacionar_para_direita():
+def rotacionar_para_direita(turtle):
     
 
 while True:
